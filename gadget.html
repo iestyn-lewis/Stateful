@@ -1,0 +1,37 @@
+<html>
+    <head>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+            
+            <script src="js/stateful.js"></script>
+            <script src="js/state.js"></script>
+            <script src="js/controls.js"></script>
+            <script src="js/actions.js"></script>
+            
+    </head>
+    <body>
+        <div class="container">
+                <h2>State-Based App Example</h2>
+                <div class="row">
+                <div class="col col-xs-8">
+                    <label>To Do List (Do not add "elephant")</label>
+                    <div id="spanError" class="alert alert-danger" role="alert"></div>
+                    <div class="input-group">
+                        <input id="txtInput" class="form form-control"></input>
+                        <span class="input-group-btn">
+                            <button id="btnAdd" class="btn btn-default">Add</button>
+                        </span>
+                    </div>
+                    <div id="tblList"></div>
+                    <div id="itemCount"></div>                
+                </div>
+                <div class="col col-xs-4">
+                    <label>State View</label>
+                    <textarea class="form form-control" rows=20 id="stateViewer"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
